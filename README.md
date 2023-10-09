@@ -1,5 +1,10 @@
 # breakingbricks
+
 Desarrollo de un juego Rompe Ladrillos 
+
+![RompeLadrillos_3](https://github.com/mectoys/breakingbricks/assets/7143758/1a011540-815b-48f6-b75d-3864d5435173)
+¡Bienvenidos de nuevo al  desarrollo de videojuegos con Pygame! En este tercer episodio, darás vida a tu juego "Breakout" al agregar la esfera en pantalla y permitir que rebote en todos los lados. Además, aprenderás cómo gestionar colisiones con la paleta para que la esfera rebote sin problemas. Este es un paso crucial en la creación de tu propio juego Breaking Bricks. ¡No te pierdas esta oportunidad de aprender cómo hacerlo y llevar tu proyecto al siguiente nivel!
+
 ![RompeLadrillos_2](https://github.com/mectoys/breakingbricks/assets/7143758/42bf0594-236b-4fee-a721-7f26706b70a6)
 Bienvenidos al emocionante mundo del desarrollo de videojuegos con Pygame! En este segundo episodio de nuestra serie sobre cómo crear el clásico juego "Breakout" actualmente llamado Breaking Bricks, te guiaré a través del proceso de agregar ladrillos, diseñar la paleta y permitir su movimiento de izquierda a derecha. Aprenderás a crear un escenario jugable y adaptable a diferentes resoluciones, lo que te acercará aún más a la finalización de tu propio juego Breakout. ¡No te pierdas esta oportunidad de seguir avanzando en tu proyecto de desarrollo de juegos!
 
