@@ -1,6 +1,9 @@
 # breakingbricks
 
-Desarrollo de un juego Rompe Ladrillos 
+Desarrollo de un juego Rompe Ladrillos(BreakOut)
+
+![RompeLadrillos_4](https://github.com/mectoys/breakingbricks/assets/7143758/6fa1f36f-1549-4989-b9c9-83e1f46e3f7c)
+¡Bienvenidos de nuevo a nuestra emocionante serie de desarrollo de videojuegos con Pygame! En este cuarto episodio, llevaremos tu juego "Breaking Bricks" al siguiente nivel al agregar la lógica para reiniciar el juego cuando la esfera salga de la pantalla, aumentar la velocidad de la esfera al colisionar con la paleta y dominar la colisión con los ladrillos. Esta lógica es fundamental y te permitirá aplicarla en otros proyectos de videojuegos en Pygame. ¡No te pierdas esta oportunidad de aprender y mejorar tus habilidades de desarrollo de juegos!
 
 ![RompeLadrillos_3](https://github.com/mectoys/breakingbricks/assets/7143758/1a011540-815b-48f6-b75d-3864d5435173)
 ¡Bienvenidos de nuevo al  desarrollo de videojuegos con Pygame! En este tercer episodio, darás vida a tu juego "Breakout" al agregar la esfera en pantalla y permitir que rebote en todos los lados. Además, aprenderás cómo gestionar colisiones con la paleta para que la esfera rebote sin problemas. Este es un paso crucial en la creación de tu propio juego Breaking Bricks. ¡No te pierdas esta oportunidad de aprender cómo hacerlo y llevar tu proyecto al siguiente nivel!
