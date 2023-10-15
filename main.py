@@ -65,11 +65,35 @@ while not game_over:
         x += 0.4 * dt
     if pressed[K_SPACE]:
         sphere_served = True
-
+    # "colision" de paleta con la esfera
     if pad_rect[0] + pad_rect.width >= sphere_rect[0] >= pad_rect[0] and \
-            sphere_rect[1] + sphere_rect.height >= pad_rect[1] and sy>0:
+            sphere_rect[1] + sphere_rect.height >= pad_rect[1] and sy > 0:
         sy *= -1
+        # Incrementar dificultad
+        sy *= 1.1
+        sx *= 1.1
         continue
+
+    delete_brick = None
+    for b in bricks:
+        bx, by = b
+        # Destruir Ladrillos por colision de nuestra esfera
+        if bx <= sphere_rect[0] <= bx + brick_rect.width and \
+                by <= sphere_rect[1] <= by + brick_rect.height:
+            delete_brick = b
+
+            if sphere_rect[0] <= bx + 2:
+                sx *= -1
+            elif sphere_rect[0] >= bx + brick_rect.width - 2:
+                sx *= -1
+            if sphere_rect[1] <= by + 2:
+                sy *= -1
+            elif sphere_rect[1] >= bx + brick_rect.height - 2:
+                sy *= -1
+            break
+
+    if delete_brick is not None:
+        bricks.remove(delete_brick)
 
     # Top
     if sphere_rect[1] <= 0:
@@ -78,8 +102,11 @@ while not game_over:
 
     # Bottom
     if sphere_rect[1] >= screen.get_height() - sphere_rect.height:
-        sphere_rect[1] = screen.get_height() - sphere_rect.height
-        sy *= -1
+        # sphere_rect[1] = screen.get_height() - sphere_rect.height
+        # sy *= -1
+        # resetear juego
+        sphere_served = False
+        sphere_rect.topleft = sphere_start
 
     # Left
     if sphere_rect[0] <= 0:
